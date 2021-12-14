@@ -66,27 +66,31 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-    <header>
+    <header class="">
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <a class="navbar-brand" href="#home">Home</a>
+        <nav class="navbar navbar-expand-lg navbar-toggler navbar-light bg-light fixed-top ">
+            <a class="navbar-brand" href="https://open.spotify.com/user/6f7icrpqh1urwgo1cohgry3wn?si=0c24cd86b03b449c" target="_blank">Spotify</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Main Disks</a>
+                  <a class="nav-link" href="#home">Main Disks</a>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#review">Album Review</a>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#shit">Shitty Album</a>
                 </li>
+                
                 <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="#legend">Legend Of Legends</a>
                 </li>
+               
               </ul>
             </div>
           </nav>
@@ -102,9 +106,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 2 albums per row when you are on a small screen
         -->
 
-
-
-    <section class="mt-5" id="home">
+        
+        <section class="mt-5" id="home">
+      <h1>Main Disks</h1>
 
         <div class="container-fluid d-flex justify-content-center">
             <div class="row">
@@ -153,16 +157,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                   </div>
     
     
-                <!-- <div class="card col-2" style="width: 18rem;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WotNEN6H76z0F4mrKQ3rhThfmuc2mfbNlg&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Ellos Dicen Mierda</h5>
-                        <h6>La Polla Records</h6>
-                      <p class="card-text">Rock N Roll · 55min</p>
-                      <a href="#" class="btn btn-primary ">Go to the CD</a>
-                    </div>
-                  </div>
-    
+                <!--  
     
                 <div class="card col-2" style="width: 18rem;">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8THJ7EmAXXbKArQd0tiyGvrMemuUFYhxIg&usqp=CAU" class="card-img-top" alt="...">
@@ -178,16 +173,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>  
     </section>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
 
 
-
-  
-
-    
-
-    <!-- EXERCISE 4
+      <!-- EXERCISE 4
             Create a section for the album reviews.
             Pick one of your favourite albums, and create a section with:
             - Cover Image
@@ -198,17 +186,97 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
+    
+    <article class="container" id="review">
+          <h2>Album Review</h2>
 
-    <!-- EXERCISE 5
+          <div class="card " style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-WotNEN6H76z0F4mrKQ3rhThfmuc2mfbNlg&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ellos Dicen Mierda</h5>
+              <p class="card-text">La Polla Records</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+              <li class="list-group-item">  Mis Cojones Y Yo · 2.33min</li>
+            
+              
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Artist link</a>
+              <a href="#" class="card-link">CD link</a>
+            </div>
+          </div>
+
+    </article>
+  <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+  
+    <article class="container" id="shit">
+      <h2> Hall Of Shame</h2>
 
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrJXU8NU3Qzoiuffah9lz7qC6nkuoMN-v0Lg&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+    </article>
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
+    
+    <article class="container" id="legend">
+
+      <h2>One Legend Band</h2>
+      <div class="card text-center">
+        <div class="card-header">
+          Motörhead
+        </div>
+        <div class="card-body">
+          <img src="https://img.discogs.com/5ufKyuMBaY8TSN7xIs_sjpL2o_E=/fit-in/600x601/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-8420359-1612838685-6977.jpeg.jpg" alt="">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+          1975 - 2015
+        </div>
+      </div>
+
+    </article>
+
+
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+
+
+  
+
+    
+
+  
+
+    
+
 
     <!-- EXERCISE 7
             Just covers!
